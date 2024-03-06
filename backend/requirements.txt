@@ -1,0 +1,7 @@
+pandas
+mysql-connector-python
+tqdm
+pyarrow
+flask
+flask-cors
+requests

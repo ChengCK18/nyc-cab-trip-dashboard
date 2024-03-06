@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pw
+      MYSQL_DATABASE: yellow_cab_db
+      MYSQL_USER: your_username
+      MYSQL_PASSWORD: pw
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      #- ./data:/workspace/data/
+      #- ./my.cnf:/etc/mysql/conf.d/my.cnf
+
+
+volumes:
+  mysql_data:
+
+
